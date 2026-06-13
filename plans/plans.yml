@@ -1,0 +1,34 @@
+plans:
+  - name: Free (Public Instance)
+    description: >
+      The main public Overpass API instance is operated by FOSSGIS and is
+      free to use for all users. No authentication or API key is required.
+      Usage is governed by community guidelines recommending responsible
+      use to avoid impacting other users.
+    url: https://wiki.openstreetmap.org/wiki/Overpass_API
+    price: 0
+    currency: USD
+    unit: month
+    features:
+      - No authentication required
+      - No API key needed
+      - Access to all OSM data globally
+      - Query Language (QL) and XML syntax support
+      - Output formats: JSON, XML, CSV, custom
+      - Historical data queries supported
+      - Complex spatial queries with unlimited filter combinations
+      - Bounding box, area, proximity, and tag-based filtering
+      - Up to 10 million elements retrievable per query
+    rateLimits:
+      - type: requests
+        limit: 10000
+        period: day
+        notes: Soft guideline; no hard enforcement but excessive use may be throttled
+      - type: bandwidth
+        limit: 1
+        unit: GB
+        period: day
+        notes: Recommended daily download limit per application
+      - type: concurrent
+        limit: 2
+        notes: Maximum concurrent slots per IP address

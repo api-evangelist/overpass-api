@@ -1,0 +1,88 @@
+name: Overpass API
+description: >
+  Overpass API is a read-only OpenStreetMap data API that enables querying
+  geographic features including nodes, ways, relations, and tags using the
+  Overpass Query Language (QL). It supports complex spatial queries with
+  filters for bounding boxes, tags, proximity, area containment, and element
+  relationships, making it the primary tool for extracting custom subsets of
+  OSM data programmatically.
+image: https://overpass-api.de/img/osm_logo.png
+tags:
+  - OpenStreetMap
+  - Geographic
+  - Spatial
+  - GIS
+  - Maps
+  - Open Data
+  - Query Language
+url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/apis.yml
+specificationVersion: "0.19"
+apis:
+  - name: Overpass API
+    description: >
+      Read-only API for querying OpenStreetMap data. Supports retrieval of
+      nodes, ways, relations, and areas using the Overpass Query Language (QL)
+      or XML syntax, with output in JSON, XML, CSV, or custom formats.
+    image: https://overpass-api.de/img/osm_logo.png
+    humanURL: https://overpass-api.de/
+    baseURL: https://overpass-api.de/api
+    tags:
+      - OpenStreetMap
+      - Geographic
+      - Spatial
+      - GIS
+      - Maps
+      - Nodes
+      - Ways
+      - Relations
+    properties:
+      - type: Documentation
+        url: https://dev.overpass-api.de/overpass-doc/en/
+      - type: Documentation
+        url: https://wiki.openstreetmap.org/wiki/Overpass_API
+      - type: LanguageReference
+        url: https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
+      - type: GitHubRepository
+        url: https://github.com/drolbr/Overpass-API
+      - type: InteractiveTool
+        url: https://overpass-turbo.eu/
+      - type: StatusPage
+        url: https://overpass-api.de/api/status
+      - type: X
+        url: https://x.com/osmoverpass
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/finops/finops.yml
+    contact:
+      - FN: OpenStreetMap Community Forum
+        url: https://community.openstreetmap.org/
+      - FN: GIS StackExchange
+        url: https://gis.stackexchange.com/questions/tagged/overpass-api
+      - FN: Stack Overflow
+        url: https://stackoverflow.com/questions/tagged/overpass-api
+common:
+  - type: Documentation
+    url: https://dev.overpass-api.de/overpass-doc/en/
+  - type: LanguageReference
+    url: https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
+  - type: GitHubRepository
+    url: https://github.com/drolbr/Overpass-API
+  - type: License
+    url: https://github.com/drolbr/Overpass-API/blob/master/LICENSE
+  - type: InteractiveTool
+    url: https://overpass-turbo.eu/
+  - type: StatusPage
+    url: https://overpass-api.de/api/status
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/plans/plans.yml
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/rate-limits/rate-limits.yml
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/finops/finops.yml
+maintainers:
+  - FN: Kin Lane
+    X-github: kinlane
+    email: kin@apievangelist.com

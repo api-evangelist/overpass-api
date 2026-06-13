@@ -1,0 +1,50 @@
+finops:
+  model: free-open-source
+  description: >
+    Overpass API is free and open-source software (AGPL-3.0) operated as a
+    community service. The main public instance is hosted and funded by FOSSGIS
+    (Freie und Open Source GIS Community), a German non-profit organization
+    that supports OpenStreetMap in Germany, Austria, and Switzerland. There are
+    no fees, API keys, or commercial tiers for using the public instances.
+  cost:
+    directCost: 0
+    currency: USD
+    notes: >
+      No charges to end users. The service is donation- and volunteer-funded.
+      Heavy users are encouraged to donate to FOSSGIS or consider hosting their
+      own Overpass API instance to reduce load on shared infrastructure.
+  selfHosting:
+    supported: true
+    license: AGPL-3.0
+    sourceURL: https://github.com/drolbr/Overpass-API
+    notes: >
+      Organizations with high query volumes or data sensitivity requirements
+      can self-host Overpass API on their own infrastructure. Installation
+      documentation is available at overpass-api.de. Self-hosted instances
+      require downloading and maintaining an OSM planet or regional extract.
+  considerations:
+    - title: Shared Public Resource
+      description: >
+        The public instances are community-funded shared infrastructure.
+        Applications making heavy use should consider caching responses,
+        reducing query frequency, and donating to FOSSGIS.
+    - title: No SLA
+      description: >
+        Public instances have no formal SLA or uptime guarantees. For
+        production applications requiring reliability, self-hosting or
+        commercial OpenStreetMap data providers are recommended.
+    - title: Data Freshness
+      description: >
+        The main instance updates from the OSM planet database with a lag
+        of roughly 1-2 minutes for minutely diffs. Historical queries are
+        supported via the [date:"YYYY-MM-DDTHH:MM:SSZ"] filter.
+  alternatives:
+    - name: Self-Hosted Overpass API
+      description: Deploy your own instance using the open-source software
+      url: https://github.com/drolbr/Overpass-API
+    - name: Geofabrik
+      description: Commercial OpenStreetMap data services and extracts
+      url: https://www.geofabrik.de/
+    - name: OpenStreetMap Data Exports
+      description: Full planet and regional extract downloads
+      url: https://planet.openstreetmap.org/

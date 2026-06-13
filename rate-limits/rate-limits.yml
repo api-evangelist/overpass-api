@@ -1,0 +1,67 @@
+rateLimits:
+  - name: Daily Request Guideline
+    description: >
+      Soft limit of 10,000 queries per day per application on the main
+      FOSSGIS-operated public instance (overpass-api.de). This is a community
+      guideline rather than a hard-enforced cap. Exceeding this may result in
+      temporary throttling or blocking at operator discretion.
+    type: requests
+    limit: 10000
+    period: day
+    enforcement: soft
+    instance: https://overpass-api.de/api/interpreter
+
+  - name: Daily Bandwidth Guideline
+    description: >
+      Soft limit of 1 GB data download per day per application on the main
+      public instance. This is a community guideline intended to ensure fair
+      sharing of the free public service.
+    type: bandwidth
+    limit: 1073741824
+    unit: bytes
+    period: day
+    enforcement: soft
+    instance: https://overpass-api.de/api/interpreter
+
+  - name: Concurrent Request Slots
+    description: >
+      Each IP address is allocated 2 concurrent request slots by default on
+      the main public instance. Additional slots are not available without
+      contacting the operators. The /api/status endpoint reports available
+      slots for the current IP.
+    type: concurrent
+    limit: 2
+    enforcement: hard
+    statusEndpoint: https://overpass-api.de/api/status
+    instance: https://overpass-api.de/api/interpreter
+
+  - name: Query Timeout
+    description: >
+      Default query execution timeout is 180 seconds. Queries can specify a
+      custom timeout using the [timeout:N] setting at the start of the query.
+      Queries exceeding the timeout are terminated by the server.
+    type: timeout
+    defaultSeconds: 180
+    userConfigurable: true
+    configSyntax: "[timeout:N]"
+    enforcement: hard
+
+  - name: Query Memory Limit
+    description: >
+      Default memory allocation per query is 512 MB. Queries can request up
+      to 1 GB using the [maxsize:N] setting. Queries exceeding memory limits
+      are terminated.
+    type: memory
+    defaultBytes: 536870912
+    maxBytes: 1073741824
+    userConfigurable: true
+    configSyntax: "[maxsize:N]"
+    enforcement: hard
+
+notes: >
+  The VK Maps instance (maps.mail.ru/osm/tools/overpass/api/interpreter) and
+  Private.coffee instance (overpass.private.coffee/api/interpreter) currently
+  have no stated rate limits but ask users to contact operators for large-scale
+  projects. Rate limits apply per IP address on all public instances. Including
+  a User-Agent or Referer header identifying your application is strongly
+  recommended as best practice.
