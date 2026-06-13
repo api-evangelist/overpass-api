@@ -1,0 +1,104 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#"
+  },
+  "@type": "WebAPI",
+  "@id": "https://overpass-api.de/",
+  "name": "Overpass API",
+  "description": "Overpass API is a read-only OpenStreetMap data API that enables querying geographic features including nodes, ways, relations, and tags using the Overpass Query Language (QL). It supports complex spatial queries with filters for bounding boxes, tags, proximity, area containment, and element relationships, making it the primary tool for extracting custom subsets of OSM data programmatically.",
+  "url": "https://overpass-api.de/",
+  "documentation": "https://dev.overpass-api.de/overpass-doc/en/",
+  "termsOfService": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+  "license": "https://github.com/drolbr/Overpass-API/blob/master/LICENSE",
+  "version": "0.7.62.4",
+  "dateModified": "2026-06-13",
+  "provider": {
+    "@type": "Organization",
+    "name": "FOSSGIS e.V. / OpenStreetMap Community",
+    "url": "https://overpass-api.de/"
+  },
+  "image": "https://overpass-api.de/img/osm_logo.png",
+  "keywords": [
+    "OpenStreetMap",
+    "Geographic",
+    "Spatial",
+    "GIS",
+    "Maps",
+    "Open Data",
+    "Query Language",
+    "Nodes",
+    "Ways",
+    "Relations"
+  ],
+  "availableChannel": [
+    {
+      "@type": "ServiceChannel",
+      "name": "Main API Endpoint",
+      "serviceUrl": "https://overpass-api.de/api/interpreter",
+      "description": "Primary global Overpass API interpreter endpoint operated by FOSSGIS"
+    },
+    {
+      "@type": "ServiceChannel",
+      "name": "Status Endpoint",
+      "serviceUrl": "https://overpass-api.de/api/status",
+      "description": "Returns current server status including connected slots and rate limit info"
+    },
+    {
+      "@type": "ServiceChannel",
+      "name": "VK Maps Mirror",
+      "serviceUrl": "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+      "description": "Russia-based Overpass API mirror with global coverage"
+    },
+    {
+      "@type": "ServiceChannel",
+      "name": "Private.coffee Mirror",
+      "serviceUrl": "https://overpass.private.coffee/api/interpreter",
+      "description": "Community-operated Overpass API mirror"
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "Query OSM Data via GET",
+      "target": "https://overpass-api.de/api/interpreter?data={query}",
+      "query-input": "required name=query"
+    },
+    {
+      "@type": "SearchAction",
+      "name": "Query OSM Data via POST",
+      "target": {
+        "@type": "EntryPoint",
+        "httpMethod": "POST",
+        "urlTemplate": "https://overpass-api.de/api/interpreter",
+        "description": "POST body contains the Overpass QL or XML query in 'data' parameter"
+      }
+    }
+  ],
+  "supportingData": {
+    "@type": "Dataset",
+    "name": "OpenStreetMap Planet",
+    "description": "Full OpenStreetMap dataset including nodes, ways, relations, and their associated tags",
+    "license": "https://opendatacommons.org/licenses/odbl/",
+    "url": "https://www.openstreetmap.org/"
+  },
+  "featureList": [
+    "Overpass Query Language (QL) support",
+    "XML query syntax support",
+    "Bounding box spatial filters",
+    "Tag-based filtering",
+    "Proximity (around) queries",
+    "Area containment queries",
+    "Element relationship traversal (nodes of way, members of relation)",
+    "Output in JSON, XML, CSV, and custom formats",
+    "Recursive element lookups",
+    "Date-based historical queries",
+    "Area generation from closed ways and relations",
+    "Object counting and aggregation"
+  ],
+  "sameAs": [
+    "https://github.com/drolbr/Overpass-API",
+    "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "https://overpass-turbo.eu/"
+  ]
+}

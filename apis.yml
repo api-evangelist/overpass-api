@@ -82,6 +82,7 @@ common:
     url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/rate-limits/rate-limits.yml
   - type: FinOps
     url: https://raw.githubusercontent.com/api-evangelist/overpass-api/refs/heads/main/finops/finops.yml
+modified: "2026-06-13"
 maintainers:
   - FN: Kin Lane
     X-github: kinlane

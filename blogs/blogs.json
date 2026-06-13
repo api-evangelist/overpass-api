@@ -1,0 +1,42 @@
+{
+  "blogSource": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+  "provider": "Overpass API",
+  "lastFetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Overpass API 0.7.62.4 Released",
+      "url": "https://wiki.openstreetmap.org/wiki/Overpass_API/versions",
+      "date": "2024-11-21",
+      "summary": "Release of Overpass API version 0.7.62.4, continuing active maintenance of the read-only OpenStreetMap query API. The project is licensed under GNU AGPL v3 and operated by FOSSGIS on the main public instance at overpass-api.de.",
+      "tags": ["release", "openstreetmap", "overpass-api"]
+    },
+    {
+      "title": "Understanding Overpass Query Language (QL)",
+      "url": "https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL",
+      "date": "2024-01-01",
+      "summary": "Comprehensive reference for the Overpass Query Language, covering statements for selecting nodes, ways, relations, and areas by tag, bounding box, proximity, and element relationships. The QL syntax is the primary method for constructing efficient OSM data queries.",
+      "tags": ["documentation", "query-language", "openstreetmap", "tutorial"]
+    },
+    {
+      "title": "Public Overpass API Instances and Usage Guidelines",
+      "url": "https://wiki.openstreetmap.org/wiki/Overpass_API#Public_Overpass_API_instances",
+      "date": "2024-06-01",
+      "summary": "Overview of publicly available Overpass API instances including the main FOSSGIS-operated server, VK Maps mirror, Private.coffee instance, and regional servers for Switzerland, Britain/Ireland, Virginia, and Ethiopia. Safe usage is defined as under 10,000 queries per day and under 1 GB data per day.",
+      "tags": ["infrastructure", "public-api", "rate-limits", "openstreetmap"]
+    },
+    {
+      "title": "Overpass Turbo: Interactive Overpass API Frontend",
+      "url": "https://overpass-turbo.eu/",
+      "date": "2023-01-01",
+      "summary": "Overpass Turbo provides a web-based interactive environment for writing and testing Overpass QL queries against live OpenStreetMap data. Features include a query wizard, map result visualization, and data export capabilities.",
+      "tags": ["tools", "interactive", "frontend", "overpass-turbo"]
+    },
+    {
+      "title": "Overpass API Language Bindings: Python, Node.js, JavaScript, Kotlin, Java",
+      "url": "https://wiki.openstreetmap.org/wiki/Overpass_API#Language_bindings",
+      "date": "2023-06-01",
+      "summary": "The Overpass API ecosystem includes community-maintained language bindings for Python (overpy, overpass), Node.js (query-overpass), JavaScript (osm-overpass), Kotlin (overpass-api-kotlin-client), and Java. These libraries simplify integration of OSM data queries into applications.",
+      "tags": ["sdk", "python", "nodejs", "javascript", "kotlin", "java", "libraries"]
+    }
+  ]
+}
