@@ -64,6 +64,8 @@ apis:
       - FN: Stack Overflow
         url: https://stackoverflow.com/questions/tagged/overpass-api
 common:
+  - type: DomainSecurity
+    url: security/overpass-api-domain-security.yml
   - type: Documentation
     url: https://dev.overpass-api.de/overpass-doc/en/
   - type: LanguageReference
