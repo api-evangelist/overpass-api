@@ -6,6 +6,18 @@ description: >
   filters for bounding boxes, tags, proximity, area containment, and element
   relationships, making it the primary tool for extracting custom subsets of
   OSM data programmatically.
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://overpass-api.de/img/osm_logo.png
 tags:
   - OpenStreetMap
