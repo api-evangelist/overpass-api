@@ -6,6 +6,18 @@ description: >
   filters for bounding boxes, tags, proximity, area containment, and element
   relationships, making it the primary tool for extracting custom subsets of
   OSM data programmatically.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
@@ -76,6 +88,10 @@ apis:
       - FN: Stack Overflow
         url: https://stackoverflow.com/questions/tagged/overpass-api
 common:
+  - type: IssueTracker
+    url: https://github.com/drolbr/Overpass-API/issues
+  - type: Releases
+    url: https://github.com/drolbr/Overpass-API/releases
   - type: DomainSecurity
     url: security/overpass-api-domain-security.yml
   - type: Documentation
