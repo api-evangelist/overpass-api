@@ -2,16 +2,16 @@
 kin_checks:
   slug: overpass-api
   schema_version: 0.15.1
-  scored_at: '2026-08-27'
-  run_ts: 2026-08-27T140727
+  scored_at: '2026-08-28'
+  run_ts: 2026-08-28T221322
   note: Actionable checks only (missed + partial). earned/na are every other check
     in rubric/scoring-0.15.1.yml; counts below let you verify that.
   counts:
     total: 130
-    earned: 17
+    earned: 19
     partial: 2
-    missed: 70
-    na: 41
+    missed: 72
+    na: 37
   checks:
   - id: multiple_apis
     status: missed
@@ -52,8 +52,6 @@ kin_checks:
   - id: conformance_declared
     status: missed
   - id: overlay_published
-    status: missed
-  - id: change_log_present
     status: missed
   - id: deprecation_policy
     status: missed
@@ -116,6 +114,12 @@ kin_checks:
   - id: reg_compliance_published
     status: missed
   - id: reg_named_standard_conformance
+    status: missed
+  - id: os_security_policy
+    status: missed
+  - id: os_contribution_guide
+    status: missed
+  - id: os_code_of_conduct
     status: missed
   - id: spec_presence
     status: missed
