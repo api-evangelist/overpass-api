@@ -56,6 +56,15 @@ apis:
   - Spatial
   - GIS
   - Maps
+  - Node
+  - Ways
+  - Relations
+  tags_raw:
+  - OpenStreetMap
+  - Geographic
+  - Spatial
+  - GIS
+  - Maps
   - Nodes
   - Ways
   - Relations
