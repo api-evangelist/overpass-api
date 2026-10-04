@@ -6,16 +6,21 @@ description: 'Overpass API is a read-only OpenStreetMap data API that enables qu
 
   '
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: open-core
+  license: AGPL-3.0
+  license_evidence:
+    repo: drolbr/overpass-api
+    spdx: AGPL-3.0
+    stars: 926
+  open_source: true
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: medium
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: free
