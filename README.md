@@ -64,45 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Read-only OpenStreetMap data API for querying geographic features, nodes, ways, relations, and tags using the Overpass Query Language for complex spatial queries.
+Overpass API is a read-only OpenStreetMap data API that enables querying geographic features including nodes, ways, relations, and tags using the Overpass Query Language (QL). It supports complex spatial queries with filters for bounding boxes, tags, proximity, area containment, and element relationships, making it the primary tool for extracting custom subsets of OSM data programmatically.
 
-**Human URL:** https://overpass-api.de/
+**Areas:** OpenStreetMap · Geographic · Spatial · GIS · Maps · Open Data · Query Language
 
-**Base URL:** https://overpass-api.de/api
+## Overpass API on APIs.io
 
-## Description
+Everything profiled for Overpass API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/overpass-api/](https://apis.io/providers/overpass-api/)** — or go straight to one of the APIs or properties below.
 
-Overpass API is a read-only API optimized for querying OpenStreetMap data. It supports retrieval of nodes, ways, relations, and areas using the Overpass Query Language (QL) or XML syntax, with output in JSON, XML, CSV, or custom formats. The API is free to use with no authentication required, operated by FOSSGIS as a community service.
+### APIs (1)
 
-## Key Resources
+- [Overpass API](https://apis.io/apis/overpass-api/overpass-api/) — Read-only API for querying OpenStreetMap data. Supports retrieval of nodes, ways, relations, and areas using the Overpass Query Language (QL) or XML syntax,…
 
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Apis Context](https://apis.io/jsonld/overpass-api/apis/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Overpass Api Domain Security](https://apis.io/security/overpass-api/overpass-api-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/overpass-api/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/overpass-api/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/overpass-api/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://overpass-api.de)
 - [Documentation](https://dev.overpass-api.de/overpass-doc/en/)
-- [OSM Wiki](https://wiki.openstreetmap.org/wiki/Overpass_API)
-- [Query Language Reference](https://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL)
-- [Overpass Turbo (Interactive)](https://overpass-turbo.eu/)
-- [GitHub Repository](https://github.com/drolbr/Overpass-API)
-- [API Status](https://overpass-api.de/api/status)
+- [Status](https://overpass-api.de/api/status)
 
-## Primary Endpoint
+## API Evangelist rating
 
-```
-POST/GET https://overpass-api.de/api/interpreter
-```
+**Kin Score 16.6** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-### Example Query (JSON output)
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 6.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
 
-```
-[out:json][timeout:25];
-node["amenity"="cafe"](48.8,2.3,48.9,2.4);
-out body;
-```
+**Agent readiness 2.5** — human-only
 
-## Plans
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-- [Plans](plans/plans.yml)
-- [Rate Limits](rate-limits/rate-limits.yml)
-- [FinOps](finops/finops.yml)
+**Regulatory alignment 10.8** — Government & Public Sector
 
-## License
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/overpass-api/](https://apis.io/providers/overpass-api/).
 
-Overpass API software is licensed under [AGPL-3.0](https://github.com/drolbr/Overpass-API/blob/master/LICENSE). OSM data is available under the [Open Database License (ODbL)](https://www.openstreetmap.org/copyright).
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Overpass API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/overpass-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
